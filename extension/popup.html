@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Privacy Guardian</title>
+    <style>
+      body { font-family: Arial; width: 250px; padding: 10px; }
+    </style>
+  </head>
+  <body>
+    <h3>🔐 Privacy Guardian</h3>
+    <p>Select any text on a webpage → Right click → “Analyze Privacy Risks”</p>
+    <button id="openApp">Open Full App</button>
+
+    <script>
+      document.getElementById("openApp").onclick = () => {
+        chrome.tabs.create({ url: "https://privacy-guardian.streamlit.app" });
+      };
+    </script>
+  </body>
+</html>

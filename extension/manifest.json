@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Privacy Risk Analyzer",
+  "version": "1.0",
+  "description": "Detect PII and assess privacy risk in selected text.",
+  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons8/icon16.png",
+    "48": "icons8/icon48.png",
+    "128": "icons8/icon128.png"
+  }
+}
